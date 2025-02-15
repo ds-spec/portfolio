@@ -2,9 +2,14 @@
 
 @font-face {
   font-family: "anzo regular";
-  src: url("/public/fonts/file.woff2");
+  src: url("/fonts/anzo-regular.woff2");
+}
+@font-face {
+  font-family: "anzo bold";
+  src: url("/fonts/anzo-bold.woff2");
 }
 
 @theme {
   --font-anzo-regular: "anzo regular";
+  --font-anzo-bold: "anzo bold";
 }

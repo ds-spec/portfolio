@@ -3,12 +3,14 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 
 const Card = () => {
   return (
-    <>
-      <img
-        className="relative w-full h-full rounded-[45px]"
-        src="/images/ANZO.jpg"
-      />
-      <div className="absolute flex justify-between items-center">
+    <div
+      style={{
+        backgroundImage: "url(/images/ANZO.jpg)",
+      }}
+      className="w-full h-[95vh] rounded-[40px] p-15 bg-cover bg-center bg-no-repeat relative overflow-hidden"
+    >
+      {/* <img className="w-full h-full" src="/images/ANZO.jpg" /> */}
+      <div className="flex justify-between items-center">
         <img src="/images/logo.png" className="w-18 drop-shadow-xl" />
         <div className="flex gap-3 items-center">
           <div className="bg-white px-0.5 py-0.5 rounded-full">
@@ -19,13 +21,22 @@ const Card = () => {
           <BsThreeDotsVertical color="#fff" size={"1.2em"} />
         </div>
       </div>
-      <div>
-        <h1 className="text-8xl text-white font-bold">
-          I AM A <b className="">DARK MODE</b> DEVLOPER TO HIRE
+      <div className="mt-30 w-[45%]">
+        <h1 className="text-7xl text-white font-anzo-bold">
+          I AM{" "}
+          <span className="text-black">
+            DARK MODE
+            <span className="text-white text-4xl absolute">&trade;</span>
+          </span>{" "}
+          <span className="text-[7.5vw] font-bold">DEVELOPER</span> TO HIRE
         </h1>
       </div>
-      {/* </div> */}
-    </>
+      <div className="mt-30 w-[45%]">
+        <h4 className="text-white font-anzo-regular">
+          BRAND DESIGN | WEBSITE DESIGN
+        </h4>
+      </div>
+    </div>
   );
 };
 
