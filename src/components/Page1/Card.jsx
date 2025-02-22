@@ -1,3 +1,5 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import React, { useRef, useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
@@ -20,11 +22,23 @@ const Card = () => {
         tiltRef.current.getBoundingClientRect().height / 2
       ) / 10
     );
-    tiltRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`;
   };
 
+  useGSAP(() => {
+    gsap.to(tiltRef.current, {
+      rotateX: yVal,
+      rotateY: xVal,
+      ease: "expoScale(0.5,7,none)",
+      duration: 0.2,
+    });
+  }, [xVal, yVal]);
+
   const mouseLeave = () => {
-    tiltRef.current.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    gsap.to(tiltRef.current, {
+      rotateX: 0,
+      rotateY: 0,
+      ease: "power4.out",
+    });
   };
 
   return (
@@ -33,9 +47,8 @@ const Card = () => {
         backgroundImage: "url(/images/ANZO.jpg)",
         perspective: "1000px",
       }}
-      className="w-full h-[95vh] rounded-[40px] p-15 bg-cover bg-center bg-no-repeat relative overflow-hidden"
+      className="w-full h-[95vh] rounded-[40px] p-15 bg-cover bg-center bg-no-repeat relative overflow-hidden shadow-2xl"
     >
-      {/* <img className="w-full h-full" src="/images/ANZO.jpg" /> */}
       <div className="relative flex justify-between items-center">
         <img src="/images/logo.png" className="w-18 drop-shadow-xl" />
         <div className="flex gap-3 items-center">
@@ -50,8 +63,8 @@ const Card = () => {
       <div
         ref={tiltRef}
         onMouseMove={(e) => mouseMoving(e)}
-        onMouseLeave={() => mouseLeave()}
-        className="mt-30 w-[45%] transition-all"
+        onMouseLeave={mouseLeave}
+        className="mt-30 w-[45%]"
       >
         <h1 className="text-7xl text-white font-anzo-bold">
           I AM{" "}

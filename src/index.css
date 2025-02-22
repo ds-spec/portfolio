@@ -8,8 +8,13 @@
   font-family: "anzo bold";
   src: url("/fonts/anzo-bold.woff2");
 }
+@font-face {
+  font-family: "anzo italic";
+  src: url("/fonts/anzo-italic.woff2");
+}
 
 @theme {
   --font-anzo-regular: "anzo regular";
   --font-anzo-bold: "anzo bold";
+  --font-anzo-italic: "anzo italic";
 }
