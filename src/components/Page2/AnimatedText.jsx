@@ -6,9 +6,6 @@ import React, { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const AnimatedText = () => {
-  const myRef = (el) => {
-    console.log(el); // Logs the actual DOM element when it's rendered
-  };
   const textRefs = useRef([]);
   useGSAP(() => {
     textRefs.current.forEach((el, index) => {
@@ -86,7 +83,7 @@ const AnimatedText = () => {
                 d="M290.21 36.329V62.73h8.448V45.152h30.745V62.73h8.442V36.375l-47.635-.046Zm7.506-8.54h32.483c4.512-.9 7.867-4.89 8.813-8.75h-50.107c.936 3.861 4.341 7.85 8.811 8.75Zm-33.091 34.958c4.26-1.81 6.551-4.94 7.429-8.603h-37.889l.024-35.084-8.494.024v43.663h38.93ZM162.536 27.67h29.999c4.522-1.317 8.32-4.77 9.246-8.598h-47.655v25.803h39.004v9.055l-30.594.024c-4.795 1.34-8.86 4.566-10.889 8.828l2.479-.045h47.384v-26.44h-38.974V27.67Zm-74.058.084h32.472c4.518-.903 7.875-4.89 8.817-8.754H79.661c.936 3.864 4.343 7.851 8.817 8.754Zm0 17.256h32.472c4.518-.893 7.875-4.883 8.817-8.75H79.661c.936 3.868 4.343 7.857 8.817 8.75Zm0 17.733h32.472c4.518-.9 7.875-4.89 8.817-8.752H79.661c.936 3.863 4.343 7.851 8.817 8.752ZM4 19.105c.976 3.816 4.273 7.716 8.795 8.693h13.669l.697.276v34.57h8.535v-34.57l.776-.276h13.68c4.574-1.18 7.8-4.877 8.758-8.693v-.084H4v.084Z"
               ></path>
             </g>
-            <g clip-path="url(#96a8edfe-3cce-4a8a-8fa1-014070af92c2_comp-lmyox36t2)">
+            <g clipPath="url(#96a8edfe-3cce-4a8a-8fa1-014070af92c2_comp-lmyox36t2)">
               <g filter="url(#aef381e0-a01b-4767-81f9-2c2e04143cb9_comp-lmyox36t2)">
                 <mask
                   height="45"
@@ -158,14 +155,14 @@ const AnimatedText = () => {
                 <path
                   fill="#060606"
                   d="M705.812 5.987c0-.545.441-.987.987-.987h70.082c.545 0 .987.442.987.987V76.07a.987.987 0 0 1-.987.987h-70.082a.987.987 0 0 1-.987-.987V5.987Zm36.028 9.826c-13.929 0-25.22 11.292-25.22 25.22 0 13.929 11.291 25.22 25.22 25.22 13.928 0 25.22-11.291 25.22-25.22 0-13.928-11.292-25.22-25.22-25.22Z"
-                  clip-rule="evenodd"
-                  fill-rule="evenodd"
+                  clipRule="evenodd"
+                  fillRule="evenodd"
                 ></path>
               </g>
             </g>
             <defs fill="none">
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="89.701"
                 width="64.799"
@@ -173,10 +170,7 @@ const AnimatedText = () => {
                 x="490.013"
                 id="b3e3b32c-99fe-4d7b-a6f9-ff5000655d82_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -197,7 +191,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="61.944"
                 width="299.528"
@@ -205,10 +199,7 @@ const AnimatedText = () => {
                 x="1736.81"
                 id="2e56b794-19a3-494a-9caf-005465178713_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -229,7 +220,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="91"
                 width="300"
@@ -237,10 +228,7 @@ const AnimatedText = () => {
                 x="1289.81"
                 id="5b65b79f-a8c3-4cbd-8f79-4523e3ad9925_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -261,7 +249,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="51.782"
                 width="343.013"
@@ -269,10 +257,7 @@ const AnimatedText = () => {
                 x="0"
                 id="5627dd36-a779-48af-8b69-2a6a7f33fdf2_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -293,7 +278,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="51.39"
                 width="120.072"
@@ -301,10 +286,7 @@ const AnimatedText = () => {
                 x="799.585"
                 id="aef381e0-a01b-4767-81f9-2c2e04143cb9_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -325,7 +307,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="51.731"
                 width="42.248"
@@ -333,10 +315,7 @@ const AnimatedText = () => {
                 x="921.873"
                 id="d2e92518-4505-4e46-9870-da9ee420c72a_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -357,7 +336,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="49.858"
                 width="40.374"
@@ -365,10 +344,7 @@ const AnimatedText = () => {
                 x="959.733"
                 id="36dc8be9-e14d-4468-8f10-5b935f0ded2f_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -389,7 +365,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="50.794"
                 width="41.486"
@@ -397,10 +373,7 @@ const AnimatedText = () => {
                 x="996.85"
                 id="840e4ba9-59ed-45fc-94cd-fb8597521bb6_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -421,7 +394,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="49.858"
                 width="43.242"
@@ -429,10 +402,7 @@ const AnimatedText = () => {
                 x="1037.93"
                 id="0dda612c-ac15-4c9a-8185-69a6202644b9_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -453,7 +423,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="49.858"
                 width="12.508"
@@ -461,10 +431,7 @@ const AnimatedText = () => {
                 x="1079.56"
                 id="28141f90-b296-4f7d-a99b-03f5e9d14de7_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -485,7 +452,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="51.731"
                 width="51.44"
@@ -493,10 +460,7 @@ const AnimatedText = () => {
                 x="1090.51"
                 id="e9ada13d-57dd-4d3b-81dd-2261c43d0bb0_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -517,7 +481,7 @@ const AnimatedText = () => {
                 ></feBlend>
               </filter>
               <filter
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
                 filterUnits="userSpaceOnUse"
                 height="80.056"
                 width="80.057"
@@ -525,10 +489,7 @@ const AnimatedText = () => {
                 x="701.812"
                 id="051c9507-4be0-407a-81f9-24a005c00fd5_comp-lmyox36t2"
               >
-                <feFlood
-                  result="BackgroundImageFix"
-                  flood-opacity="0"
-                ></feFlood>
+                <feFlood result="BackgroundImageFix" floodOpacity="0"></feFlood>
                 <feColorMatrix
                   result="hardAlpha"
                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
